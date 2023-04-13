@@ -4,8 +4,8 @@
 //vendedor ingresar cuanto es su sueldo base, cuantas ventas realizó y cuanto cobró por cada venta.
 Algoritmo ComisionesDeVentas
 	
-	Definir n, i, ventas, sueldo_base, comision, total_comisiones, sueldo_total Como Entero
-	Definir cobro_venta Como Real
+	Definir n, i, ventas, total_comisiones Como Entero
+	Definir cobro_venta, sueldo_base, comision, sueldo_total Como Real
 	
 	Escribir "Ingrese el número de vendedores: "
 	Leer n
