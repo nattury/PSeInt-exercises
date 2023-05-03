@@ -16,7 +16,7 @@ Algoritmo eje6
 	//		0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
 	
 	Definir i, pos, tam como Entero
-    Definir vector, caracter como Caracter
+    Definir frase, vector, caract como Caracter
 	
 	Dimension vector[20] 
 	
@@ -25,17 +25,17 @@ Algoritmo eje6
     tam <- Longitud(frase)
 	
     Para i <- 0 hasta tam-1 Hacer
-        vector[i] <- Subcadena(frase, i+1, 1)
+        vector[i] <- Subcadena(frase, i+1, i+1)
     FinPara
 	
     Escribir "Ingrese un caracter: "
-    Leer caracter
+    Leer caract
     Escribir "Ingrese una posición entre 0 y ", tam-1, ": "
     Leer pos
 	
     Si pos >= 0 y pos < tam Entonces
         Si vector[pos] = " " o vector[pos] = "" Entonces
-            vector[pos] <- caracter
+            vector[pos] <- caract
             Escribir "Caracter ingresado correctamente"
         Sino
             Escribir "La posición ", pos, " ya está ocupada"
@@ -46,7 +46,7 @@ Algoritmo eje6
 	
     Escribir "El vector resultante es: "
     Para i <- 0 hasta tam-1 Hacer
-        Escribir vector[i],
+        Escribir Sin Saltar vector[i]
     FinPara
 	
 FinAlgoritmo
